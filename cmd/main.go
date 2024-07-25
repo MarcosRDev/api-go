@@ -44,6 +44,8 @@ func main() {
 
 	server.POST("product", productController.CreatProduct)
 
+	server.PUT("product", productController.UpdateProduct)
+
 	server.POST("login", loginController.LoginUser)
 
 	server.Run(":8000")
